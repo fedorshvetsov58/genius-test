@@ -4,36 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Прекрасна Поліна</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="#">
+        <a href="/">
           <img src="./images/logo.png" alt="Логотип прекрасної Поліни" />
         </a>
         <ul>
-          <li><a href="#">Новини</a></li>
-          <li><a href="#">Найкраща дівчина</a></li>
-          <li><a href="#">Вітрини</a></li>
-          <li><a href="#">Підтримати</a></li>
+          <li><a class="link" href="#News">Новини</a></li>
+          <li><a class="link" href="#Gratest-girl">Найкраща дівчина</a></li>
+          <li><a class="link" href="#Photos">Вітрини</a></li>
+          <li><a class="link" href="#Support">Підтримати</a></li>
         </ul>
       </nav>
-      <button type="button">
-        Подякувати
-        <p><span>(за те що ти є)</span></p>
-      </button>
+      <button class="button" type="button">Замовити роспис</button>
     </header>
     <main>
       <section>
-        <h1>Прекрасна Поліна</h1>
+        <h1 class="hero-title"><span class="accent">Прекрасна</span> Поліна</h1>
       </section>
-      <section>
-        <ul>
-          <li>Слушно та цікавоі</li>
+      <section id="News">
+        <ul class="advantages-list">
+          <li>Слушно та цікаво</li>
           <li>Заздрять всі</li>
           <li>Нереальна фігура</li>
         </ul>
-        <h2>Новини від Поліни</h2>
+        <h2 class="section-title">Новини від Поліни</h2>
         <p>
           <span>кароче</span>, сьогодні йшла з подружкою на каву, але я так
           пожаліла про це, бо вона вже так <span>заманала</span> своїми
@@ -46,10 +44,12 @@
           <span>кароче</span> день не вдався, помила сама і весь день він не
           розумів чого я така злюка.
         </p>
-        <img src="./images/korich.png" alt="НУ ПРОСТО СОСОЧКА" />
+        <img src="./images/korich.png" alt="ФОТО ГДЕ ПРОСТО СОСОЧКА" />
       </section>
-      <section>
-        <h2>Найкраща дівчина Варшави</h2>
+      <section id="Gratest-girl">
+        <h2 class="section-title">
+          Найкраща дівчина <span class="accent">Варшави</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -74,8 +74,8 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Найкращі вітрини</h2>
+      <section id="Photos">
+        <h2 class="section-title">Найкращі вітрини</h2>
         <ul>
           <li>
             <article>
@@ -94,9 +94,17 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Підтримати Красотку</h2>
+      <section id="Support">
+        <h2 class="section-title">Підтримати Красотку</h2>
       </section>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126214.40561909287!2d115.14187213542067!3d-8.672504761232497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2409b0e5e80db%3A0xe27334e8ccb9374a!2z0JTQtdC90L_QsNGB0LDRgCwgRGVucGFzYXIgQ2l0eSwg0JHQsNC70LgsINCY0L3QtNC-0L3QtdC30LjRjw!5e0!3m2!1sru!2spl!4v1761265114931!5m2!1sru!2spl"
+        width="600"
+        height="600"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </main>
     <footer>
       <nav>
@@ -104,10 +112,10 @@
           <img src="./images/logo.png" alt="Логотип прекрасної Поліни" />
         </a>
         <ul>
-          <li><a href="#">Новини</a></li>
-          <li><a href="#">Найкраща дівчина</a></li>
-          <li><a href="#">Вітрини</a></li>
-          <li><a href="#">Підтримати</a></li>
+          <li><a href="#News">Новини</a></li>
+          <li><a href="#Gratest-girl">Найкраща дівчина</a></li>
+          <li><a href="#Photos">Вітрини</a></li>
+          <li><a href="#Support">Підтримати</a></li>
         </ul>
       </nav>
       <address>
@@ -131,7 +139,7 @@
           </li>
         </ul>
         <a href="#" target="_blank">Політика конфіденційності</a>
-        <p>2025 Дані захищені</p>
+        <p>&copy; 2025 Дані захищені</p>
       </address>
     </footer>
   </body>
