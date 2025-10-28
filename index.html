@@ -8,169 +8,205 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a href="/">
-          <img src="./images/logo.png" alt="Логотип прекрасної Поліни" />
-        </a>
-        <ul>
-          <li><a class="link" href="#News">Новости</a></li>
-          <li><a class="link" href="#Gratest-girl">Лучшая девушка</a></li>
-          <li><a class="link" href="#Photos">Фотки</a></li>
-          <li><a class="link" href="#Support">Поддержать</a></li>
-        </ul>
-      </nav>
-      <button class="button" type="button">Заказать фул</button>
+      <div class="container">
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="/">
+              <img
+                src="./images/logo.png"
+                alt="Логотип прекрасної Поліни"
+                class="img-logo"
+              />
+            </a>
+            <ul class="header-menu">
+              <li><a class="link" href="#News">Новости</a></li>
+              <li><a class="link" href="#Gratest-girl">Лучшая девушка</a></li>
+              <li><a class="link" href="#Photos">Фотки</a></li>
+              <li><a class="link" href="#Support">Поддержать</a></li>
+            </ul>
+          </nav>
+          <button class="button" type="button">Заказать фул</button>
+        </div>
+      </div>
     </header>
     <main>
-      <section>
-        <h1 class="hero-title">
-          <span class="accent">Прекрасная</span>
-          <span class="sec-accent">Полина</span>
-        </h1>
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="hero-title">
+            <span class="accent">Прекрасная</span>
+            <span class="sec-accent">Полина</span>
+          </h1>
+        </div>
       </section>
-      <section id="News">
-        <ul class="advantages-list">
-          <li class="advantages-item">Интересно</li>
-          <li class="advantages-item">Завидуют все</li>
-          <li class="advantages-item">Ее талия-аномалия</li>
-        </ul>
-        <h2 class="section-title">Новости от Поли</h2>
-        <p class="News-text">
-          <span>кароче</span>, Сегодня шла с подружкой на кофе, но так пожалела
-          об этом, потому что она уже так
-          <span class="zamanala">заманала</span> своими рассказами о своём
-          парне, что я не могу спокойно расслабиться и насладиться напитком.
-        </p>
-        <p>
-          Когда пришла домой, увидела, что мой
-          <span>самый лучший парень во вселенной</span> не помыл посуду —
-          <span>короче</span>, день не задался. Помыла сама, а весь день он не
-          понимал, почему я такая злюка.
-        </p>
-        <img src="./images/korich.png" alt="ФОТО ГДЕ ПРОСТО СОСОЧКА" />
+      <section class="advantages-section">
+        <div class="container">
+          <h2 class="visualy-hidden">Преимущества</h2>
+          <ul class="advantages-list">
+            <li class="advantages-item">Игривая</li>
+            <li class="advantages-item">Остроумная</li>
+            <li class="advantages-item">Сногшибательная</li>
+          </ul>
+        </div>
       </section>
-      <section id="Gratest-girl">
-        <h2 class="section-title">
-          Лучшая девушка <span class="accent">Варшавы</span>
-        </h2>
-        <ul>
-          <li>
-            <article>
-              <h3 class="Gratest-girl-home">На домашнем</h3>
-              <p>"Всем привет, я Поля</p>
-              <p>
-                Проснулась я сегодня в 15:45 утра, поэтому могу себе позволить
-                делать уборку весь день.
+      <section class="News-section" id="News">
+        <div class="container">
+          <div class="News-container">
+            <div class="News-content">
+              <h2 class="News-title section-title">Новости от Поли</h2>
+              <p class="News-text">
+                <span>кароче</span>, Сегодня шла с подружкой на кофе, но так
+                пожалела об этом, потому что она уже так
+                <span class="zamanala">заманала</span> своими рассказами о своём
+                парне, что я не могу спокойно расслабиться и насладиться
+                напитком.
               </p>
-            </article>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <article>
-              <h3 class="Gratest-girl-home">На немножечко блатном</h3>
-              <p>Хрена я соска-нереалка!</p>
               <p>
-                Как же тяжело что-то вообще делать, осознавая, что я самая
-                пиздатая...
+                Когда пришла домой, увидела, что мой
+                <span>самый лучший парень во вселенной</span> не помыл посуду —
+                <span>короче</span>, день не задался. Помыла сама, а весь день
+                он не понимал, почему я такая злюка.
               </p>
-            </article>
-          </li>
-        </ul>
+            </div>
+            <img src="./images/korich.png" alt="ФОТО ГДЕ ПРОСТО СОСОЧКА" />
+          </div>
+        </div>
       </section>
-      <section id="Photos">
-        <h2 class="section-title">Топ фото</h2>
-        <ul>
-          <li>
-            <article>
-              <h3 class="format-title">Няшка-стесняшка</h3>
-              <div class="format-txt">
-                <p>На скромном, милом, очеровательном</p>
-                <p>Настроение приподнятое</p>
-              </div>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h3 class="format-title">Смотря какой фабрик</h3>
-              <div class="format-txt">
-                <p>На скромном, милом, очеровательном</p>
-                <p>Настроение приподнятое</p>
-              </div>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h3 class="format-title">Стерва</h3>
-              <div class="format-txt">
-                <p>На скромном, милом, очеровательном</p>
-                <p>Настроение приподнятое</p>
-              </div>
-            </article>
-          </li>
-        </ul>
+      <section class="section" id="Gratest-girl">
+        <div class="container">
+          <h2 class="Gratest-girl-title section-title">
+            Лучшая девушка <span class="accent">Варшавы</span>
+          </h2>
+          <ul>
+            <li>
+              <article>
+                <h3 class="Gratest-girl-home">На домашнем</h3>
+                <p>"Всем привет, я Поля</p>
+                <p>
+                  Проснулась я сегодня в 15:45 утра, поэтому могу себе позволить
+                  делать уборку весь день.
+                </p>
+              </article>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <article>
+                <h3 class="Gratest-girl-home">На немножечко блатном</h3>
+                <p>Хрена я соска-нереалка!</p>
+                <p>
+                  Как же тяжело что-то вообще делать, осознавая, что я самая
+                  пиздатая...
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section id="Support">
-        <h2 class="section-title">Поддержать красотку</h2>
-        <p>Поддержи нереалку и будь ахуенным типом</p>
+      <section class="section" id="Photos">
+        <div class="container">
+          <h2 class="Photos-title section-title">Топ фото</h2>
+          <ul class="photo-list">
+            <li class="formats-item">
+              <article class="photo-card">
+                <h3 class="format-title">Няшка-стесняшка</h3>
+                <div class="format-txt">
+                  <p>На скромном, милом, очеровательном</p>
+                  <p>Настроение приподнятое</p>
+                </div>
+              </article>
+            </li>
+            <li class="formats-item">
+              <article class="photo-card">
+                <h3 class="format-title">Смотря какой фабрик</h3>
+                <div class="format-txt">
+                  <p>На скромном, милом, очеровательном</p>
+                  <p>Настроение приподнятое</p>
+                </div>
+              </article>
+            </li>
+            <li class="formats-item">
+              <article class="photo-card">
+                <h3 class="format-title">Стерва</h3>
+                <div class="format-txt">
+                  <p>На скромном, милом, очеровательном</p>
+                  <p>Настроение приподнятое</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126214.40561909287!2d115.14187213542067!3d-8.672504761232497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2409b0e5e80db%3A0xe27334e8ccb9374a!2z0JTQtdC90L_QsNGB0LDRgCwgRGVucGFzYXIgQ2l0eSwg0JHQsNC70LgsINCY0L3QtNC-0L3QtdC30LjRjw!5e0!3m2!1sru!2spl!4v1761265114931!5m2!1sru!2spl"
-        width="600"
-        height="600"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+      <section class="section" id="Support">
+        <div class="container">
+          <h2 class="Support-title section-title">Поддержать красотку</h2>
+          <p>Поддержи нереалку и будь ахуенным типом</p>
+        </div>
+      </section>
+      <div class="container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126214.40561909287!2d115.14187213542067!3d-8.672504761232497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2409b0e5e80db%3A0xe27334e8ccb9374a!2z0JTQtdC90L_QsNGB0LDRgCwgRGVucGFzYXIgQ2l0eSwg0JHQsNC70LgsINCY0L3QtNC-0L3QtdC30LjRjw!5e0!3m2!1sru!2spl!4v1761265114931!5m2!1sru!2spl"
+          width="600"
+          height="600"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </main>
     <footer>
-      <nav>
-        <a href="#">
-          <img src="./images/logo.png" alt="Логотип прекрасної Поліни" />
-        </a>
-        <ul>
-          <li><a class="link" href="#News">Новости</a></li>
-          <li><a class="link" href="#Gratest-girl">Лучшая девушка</a></li>
-          <li><a class="link" href="#Photos">Фотки</a></li>
-          <li><a class="link" href="#Support">Поддержать</a></li>
-        </ul>
-      </nav>
-      <address>
-        <ul>
-          <li>
-            <a class="address-link" href="tel:+380977777777"
-              >+38 (097) 777 77 77</a
-            >
-          </li>
-          <li>
-            <a class="address-link" href="mailto:polia@gmail.com"
-              >polia@gmail.com</a
-            >
-          </li>
-          <li>
-            <a
-              class="address-link"
-              href="https://share.google/ZYvNInYwBnuFtZMNB"
-              target="_blank"
-              >Україна, м.Київ, вул. Королев-22 буд.06
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <!-- inst icon -->
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <!-- telegram icon -->
-            </a>
-          </li>
-        </ul>
-        <a lang="uk" class="address-link" target="_blank"
-          >Політика конфіденційності</a
-        >
-        <p lang="uk" class="address-copyright">&copy; 2025 Дані захищені</p>
-      </address>
+      <div class="container">
+        <nav>
+          <a href="#">
+            <img
+              src="./images/logo.png"
+              alt="Логотип прекрасної Поліни"
+              class="img-logo"
+            />
+          </a>
+          <ul>
+            <li><a class="link" href="#News">Новости</a></li>
+            <li><a class="link" href="#Gratest-girl">Лучшая девушка</a></li>
+            <li><a class="link" href="#Photos">Фотки</a></li>
+            <li><a class="link" href="#Support">Поддержать</a></li>
+          </ul>
+        </nav>
+        <address>
+          <ul>
+            <li>
+              <a class="address-link" href="tel:+380977777777"
+                >+38 (097) 777 77 77</a
+              >
+            </li>
+            <li>
+              <a class="address-link" href="mailto:polia@gmail.com"
+                >polia@gmail.com</a
+              >
+            </li>
+            <li>
+              <a
+                class="address-link"
+                href="https://share.google/ZYvNInYwBnuFtZMNB"
+                target="_blank"
+                >Україна, м.Київ, вул. Королев-22 буд.06
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <!-- inst icon -->
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <!-- telegram icon -->
+              </a>
+            </li>
+          </ul>
+          <a lang="uk" class="address-link" target="_blank"
+            >Політика конфіденційності</a
+          >
+          <p lang="uk" class="address-copyright">&copy; 2025 Дані захищені</p>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

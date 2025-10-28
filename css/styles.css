@@ -6,12 +6,27 @@
 }
 
 /* Base */
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: var(--color-primary-dark);
   font-family: Inter, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
 }
 
 address {
@@ -19,13 +34,37 @@ address {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+
+.visualy-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 /* Button */
 .button {
+  padding: 12px 16px;
   color: azure;
   font-weight: 600;
+  font-size: 24px;
   background: var(--color-brand);
   border: 2px solid var(--color-brand);
   border-radius: 8px;
@@ -51,11 +90,43 @@ ul {
 .link:hover {
   color: var(--color-brand);
   text-decoration: none;
-  font-weight: 600;
+}
+
+/* Header */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.img-logo {
+  width: 120px;
+  border-radius: 25px;
 }
 
 /* Hero saction */
+
+.hero-section {
+  padding: 272px 0;
+}
+
 .hero-title {
+  margin-bottom: 0;
   color: var(--color-primary-light);
   text-align: center;
   font-size: 120px;
@@ -71,12 +142,20 @@ ul {
 }
 
 /* Advantages saction */
-.advantages-list {
-  color: var(--color-primary-light);
+
+.advantages-section {
   background-color: var(--color-brand-dark);
+  padding: 16px 0;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
 }
 
 .advantages-item {
+  color: var(--color-primary-light);
   font-weight: 300;
   font-size: 20;
 }
@@ -98,19 +177,60 @@ ul {
   font-weight: 600;
 }
 
+.News-section {
+  padding-top: 96px;
+  padding-bottom: 48px;
+}
+
+.News-container {
+  display: flex;
+  gap: 40px;
+}
+
+.News-content {
+  max-width: 710px;
+}
+
 .News-text .zamanala {
   color: var(--color-brand-dark);
   text-transform: lowercase;
   font-weight: 600;
 }
 
+.News-title {
+  margin-bottom: 42px;
+}
+
 /* Gratest girl */
-.graGratest-girl .Gratest-girl-home {
+.Gratest-girl .Gratest-girl-home {
+  margin-bottom: 16px;
   font-size: 40px;
   font-weight: 600;
 }
 
+.Gratest-girl-title {
+  margin-bottom: 80px;
+}
+
 /* Photos */
+
+.photo-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.formats-item {
+  flex-basis: calc((100%-40px) / 3);
+}
+
+.photo-card {
+  padding: 24px;
+  border: 1px solid lightgray; /*remove*/
+  border-radius: 16px;
+}
+
 .format-title {
   font-size: 24px;
   font-weight: 600;
@@ -118,6 +238,16 @@ ul {
 .format-txt {
   font-size: 14px;
   font-weight: 300;
+}
+
+.Photos-title {
+  margin-bottom: 80px;
+}
+
+/* Support */
+
+.Support-title {
+  margin-bottom: 16px;
 }
 
 /* Footer */
