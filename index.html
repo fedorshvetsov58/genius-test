@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="header-container">
           <nav class="header-nav">
@@ -159,7 +159,7 @@
                 </article>
               </li>
             </ul>
-            <button class="carusel-button" type="button">
+            <button class="carusel-button next" type="button">
               <svg class="carusel-arrow" width="16" height="16">
                 <use href="./images/icons.svg#icon-Arrow"></use>
               </svg>
@@ -173,7 +173,56 @@
             <div class="contact-form">
               <h2 class="Support-title section-title">Поддержать</h2>
               <p>Поддержи нереалку и будь ахуенным типом</p>
-              <!-- form -->
+              <form name="modal-form" autocomplete="off" novalidate>
+                <div class="form-field">
+                  <label class="form-label visualy-hidden" for="user-name"
+                    >Имя</label
+                  >
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Имя"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label visualy-hidden" for="user-tel"
+                    >Телефон</label
+                  >
+                  <input
+                    class="form-input"
+                    type="tel"
+                    id="user-tel"
+                    name="user-tel"
+                    placeholder="Телефон"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label visualy-hidden" for="user-email"
+                    >Електронная почта</label
+                  >
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                    placeholder="Електронная почта"
+                  />
+                </div>
+
+                <button class="form-button button" type="submit">
+                  Поддержать
+                </button>
+                <p class="form-terms">
+                  Нажимая на кнопку я соглашаюсь с <br />
+                  <a class="form-terms-link" href="#"
+                    >политикой конфиденциальности</a
+                  >
+                </p>
+              </form>
             </div>
             <iframe
               class="contact-map"
@@ -259,6 +308,52 @@
     <div class="backdrop">
       <div class="modal">
         <button class="modal-btn-close" type="button">close</button>
+        <h2>Заказать фул</h2>
+        <p>Оставь заявку и наш спец свяжется с тобой</p>
+        <form name="contact-form" autocomplete="off" novalidate>
+          <div class="form-field">
+            <label class="form-label visualy-hidden" for="user-name">Имя</label>
+            <input
+              class="form-input"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Имя"
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visualy-hidden" for="user-tel"
+              >Телефон</label
+            >
+            <input
+              class="form-input"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              placeholder="Телефон"
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visualy-hidden" for="user-email"
+              >Електронная почта</label
+            >
+            <input
+              class="form-input"
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="Електронная почта"
+            />
+          </div>
+
+          <button class="form-button button" type="submit">Заказать фул</button>
+          <p class="form-terms">
+            Нажимая на кнопку я соглашаюсь с <br />
+            <a class="form-terms-link" href="#">политикой конфиденциальности</a>
+          </p>
+        </form>
       </div>
     </div>
 
