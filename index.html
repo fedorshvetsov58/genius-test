@@ -25,7 +25,9 @@
               <li><a class="link" href="#Support">Поддержать</a></li>
             </ul>
           </nav>
-          <button class="button" type="button">Заказать фул</button>
+          <button class="button modal-btn-open" type="button">
+            Заказать фул
+          </button>
         </div>
       </div>
     </header>
@@ -74,39 +76,46 @@
       <section class="section" id="Gratest-girl">
         <div class="container">
           <h2 class="Gratest-girl-title section-title centered">
-            Лучшая девушка <span class="accent">Варшавы</span>
+            Лучшая девушка <br />
+            <span class="accent">Варшавы</span>
           </h2>
-          <ul>
-            <li>
-              <article>
+          <ul class="Gratest-girl-list">
+            <li class="Gratest-girl-item">
+              <article class="Gratest-girl-card">
                 <img
                   src="./images/dom.jpg"
                   alt="Na domashnem"
                   class="Gratest-girl-photo"
                 />
-                <h3 class="Gratest-girl-home">На домашнем</h3>
-                <p>"Всем привет, я Поля</p>
-                <p>
-                  Проснулась я сегодня в 15:45 утра, поэтому могу себе позволить
-                  делать уборку весь день.
-                </p>
+                <div>
+                  <h3 class="Gratest-girl-home">На домашнем</h3>
+                  <div class="Gratest-girl-text">
+                    <p>"Всем привет, я Поля</p>
+                    <p>
+                      Проснулась я сегодня в 15:45 утра, поэтому могу себе
+                      позволить делать уборку <br />
+                      весь день.
+                    </p>
+                  </div>
+                </div>
               </article>
             </li>
-          </ul>
-          <ul>
-            <li>
-              <article>
+            <li class="Gratest-girl-item">
+              <article class="Gratest-girl-card">
                 <img
                   src="./images/blatnom.jpg"
                   alt="Na wyjobistom"
                   class="Gratest-girl-photo"
                 />
-                <h3 class="Gratest-girl-home">На немножечко блатном</h3>
-                <p>Хрена я соска-нереалка!</p>
-                <p>
-                  Как же тяжело что-то вообще делать, осознавая, что я самая
-                  пиздатая...
-                </p>
+                <div>
+                  <h3 class="Gratest-girl-home">На блатном</h3>
+                  <div class="Gratest-girl-text"></div>
+                  <p>Хрена я соска-нереалка!</p>
+                  <p>
+                    Как же тяжело что-то вообще делать, осознавая, что я самая
+                    пиздатая...
+                  </p>
+                </div>
               </article>
             </li>
           </ul>
@@ -115,122 +124,144 @@
       <section class="section" id="Photos">
         <div class="container">
           <h2 class="Photos-title section-title centered">Топ фото</h2>
-          <button class="carusel-button" type="button">
-            <svg class="carusel-arrow" width="16" height="16">
-              <use href="./images/icons.svg#icon-Arrow"></use>
-            </svg>
-          </button>
-          <ul class="photo-list">
-            <li class="formats-item">
-              <article class="photo-card">
-                <h3 class="format-title">Няшка-стесняшка</h3>
-                <div class="format-txt">
-                  <p>На скромном, милом, очеровательном</p>
-                  <p>Настроение приподнятое</p>
-                </div>
-              </article>
-            </li>
-            <li class="formats-item">
-              <article class="photo-card">
-                <h3 class="format-title">Смотря какой фабрик</h3>
-                <div class="format-txt">
-                  <p>На скромном, милом, очеровательном</p>
-                  <p>Настроение приподнятое</p>
-                </div>
-              </article>
-            </li>
-            <li class="formats-item">
-              <article class="photo-card">
-                <h3 class="format-title">Стерва</h3>
-                <div class="format-txt">
-                  <p>На скромном, милом, очеровательном</p>
-                  <p>Настроение приподнятое</p>
-                </div>
-              </article>
-            </li>
-          </ul>
-          <button class="carusel-button" type="button">
-            <svg class="carusel-arrow" width="16" height="16">
-              <use href="./images/icons.svg#icon-Arrow"></use>
-            </svg>
-          </button>
+          <div class="photos-container">
+            <button class="carusel-button" type="button">
+              <svg class="carusel-arrow" width="16" height="16">
+                <use href="./images/icons.svg#icon-Arrow"></use>
+              </svg>
+            </button>
+            <ul class="photo-list">
+              <li class="formats-item">
+                <article class="photo-card">
+                  <h3 class="format-title">Няшка-стесняшка</h3>
+                  <div class="format-txt">
+                    <p>На скромном, милом, очеровательном</p>
+                    <p>Настроение приподнятое</p>
+                  </div>
+                </article>
+              </li>
+              <li class="formats-item">
+                <article class="photo-card">
+                  <h3 class="format-title">Смотря какой фабрик</h3>
+                  <div class="format-txt">
+                    <p>На скромном, милом, очеровательном</p>
+                    <p>Настроение приподнятое</p>
+                  </div>
+                </article>
+              </li>
+              <li class="formats-item">
+                <article class="photo-card">
+                  <h3 class="format-title">Стерва</h3>
+                  <div class="format-txt">
+                    <p>На скромном, милом, очеровательном</p>
+                    <p>Настроение приподнятое</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="carusel-button" type="button">
+              <svg class="carusel-arrow" width="16" height="16">
+                <use href="./images/icons.svg#icon-Arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
-      <section class="section" id="Support">
+      <section class="support-section section" id="Support">
         <div class="container">
-          <h2 class="Support-title section-title">Поддержать красотку</h2>
-          <p>Поддержи нереалку и будь ахуенным типом</p>
+          <div class="support-container">
+            <div class="contact-form">
+              <h2 class="Support-title section-title">Поддержать</h2>
+              <p>Поддержи нереалку и будь ахуенным типом</p>
+              <!-- form -->
+            </div>
+            <iframe
+              class="contact-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126214.40561909287!2d115.14187213542067!3d-8.672504761232497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2409b0e5e80db%3A0xe27334e8ccb9374a!2z0JTQtdC90L_QsNGB0LDRgCwgRGVucGFzYXIgQ2l0eSwg0JHQsNC70LgsINCY0L3QtNC-0L3QtdC30LjRjw!5e0!3m2!1sru!2spl!4v1761265114931!5m2!1sru!2spl"
+              width="600"
+              height="600"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
-      <div class="container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126214.40561909287!2d115.14187213542067!3d-8.672504761232497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2409b0e5e80db%3A0xe27334e8ccb9374a!2z0JTQtdC90L_QsNGB0LDRgCwgRGVucGFzYXIgQ2l0eSwg0JHQsNC70LgsINCY0L3QtNC-0L3QtdC30LjRjw!5e0!3m2!1sru!2spl!4v1761265114931!5m2!1sru!2spl"
-          width="600"
-          height="600"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
     </main>
     <footer class="footer">
       <div class="container">
-        <nav>
-          <a href="#">
-            <img
-              src="./images/logo.png"
-              alt="Логотип прекрасної Поліни"
-              class="img-logo"
-            />
-          </a>
-          <ul>
-            <li><a class="link" href="#News">Новости</a></li>
-            <li><a class="link" href="#Gratest-girl">Лучшая девушка</a></li>
-            <li><a class="link" href="#Photos">Фотки</a></li>
-            <li><a class="link" href="#Support">Поддержать</a></li>
-          </ul>
-        </nav>
-        <address>
-          <ul>
-            <li>
-              <a class="address-link" href="tel:+380977777777"
-                >+38 (097) 777 77 77</a
-              >
-            </li>
-            <li>
-              <a class="address-link" href="mailto:polia@gmail.com"
-                >polia@gmail.com</a
-              >
-            </li>
-            <li>
-              <a
-                class="address-link"
-                href="https://share.google/ZYvNInYwBnuFtZMNB"
-                target="_blank"
-                >Україна, м.Київ, вул. Королев-22 буд.06
-              </a>
-            </li>
-            <li>
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <div class="footer-logo">
               <a href="#">
-                <svg class="address-icon" width="32" height="32">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
+                <img
+                  src="./images/logo.png"
+                  alt="Логотип прекрасної Поліни"
+                  class="img-logo"
+                />
               </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="address-icon" width="32" height="32">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <a lang="uk" class="address-link" target="_blank"
-            >Політика конфіденційності</a
-          >
-          <p lang="uk" class="address-copyright">&copy; 2025 Дані захищені</p>
-        </address>
+            </div>
+            <ul class="footer-menu">
+              <li><a class="link" href="#News">Новости</a></li>
+              <li><a class="link" href="#Gratest-girl">Лучшая девушка</a></li>
+              <li><a class="link" href="#Photos">Фотки</a></li>
+              <li><a class="link" href="#Support">Поддержать</a></li>
+            </ul>
+          </nav>
+          <address class="footer-address">
+            <ul class="address-list">
+              <li>
+                <a class="address-link" href="tel:+380977777777"
+                  >+38 (097) 777 77 77</a
+                >
+              </li>
+              <li>
+                <a class="address-link" href="mailto:polia@gmail.com"
+                  >polia@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="address-link"
+                  href="https://share.google/ZYvNInYwBnuFtZMNB"
+                  target="_blank"
+                  >Україна, м.Київ, вул. Королев-22 буд.06
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="address-info">
+              <a lang="uk" class="address-link" target="_blank"
+                >Політика конфіденційності</a
+              >
+              <p lang="uk" class="address-copyright">
+                &copy; 2025 Дані захищені
+              </p>
+            </div>
+          </address>
+        </div>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">close</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
