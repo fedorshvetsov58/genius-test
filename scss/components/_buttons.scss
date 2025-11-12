@@ -1,0 +1,20 @@
+.button {
+  padding: 12px 16px;
+  color: azure;
+  font-weight: 600;
+  font-size: 24px;
+  background: var(--color-brand);
+  border: 2px solid var(--color-brand);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--color-brand);
+  background: transparent;
+}
+
+.button:active {
+  color: azure;
+  background: var(--color-brand-dark);
+}

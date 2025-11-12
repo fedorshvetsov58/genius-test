@@ -1,0 +1,60 @@
+.Gratest-girl-title {
+  margin: 0 auto 80px;
+  position: relative;
+}
+
+.Gratest-girl-title::before,
+.Gratest-girl-title::after {
+  position: absolute;
+  bottom: 32px;
+  display: block;
+  width: 352px;
+  height: 0px;
+  border: 2px solid var(--color-brand);
+  content: '';
+}
+
+.Gratest-girl-title::before {
+  left: 0;
+}
+
+.Gratest-girl-title::after {
+  right: 0;
+}
+
+.Gratest-girl-list {
+  display: flex;
+  gap: 40px 30px;
+}
+
+.Gratest-girl-item {
+  display: flex;
+  flex-basis: calc(100% - 30px / 2);
+  flex-wrap: wrap;
+}
+
+.Gratest-girl-card {
+  display: flex;
+  gap: 30px;
+}
+
+.Gratest-girl-photo {
+  border-radius: 4px 4px 4px 400px;
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 2px var(--color-brand);
+  max-height: 400px;
+}
+
+.Gratest-girl-text p {
+  margin-bottom: 24px;
+}
+
+.Gratest-girl-text p:last-child {
+  margin-bottom: 0px;
+}
+
+.Gratest-girl .Gratest-girl-home {
+  margin-bottom: 16px;
+  font-size: 40px;
+  font-weight: 600;
+}

@@ -1,0 +1,38 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.img-logo {
+  width: 120px;
+  border-radius: 25px;
+  transition: transform 0.3s, border-radius 0.3s;
+}
+
+.img-logo:hover {
+  transform: scale(1.1);
+  border-radius: 35px;
+}

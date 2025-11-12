@@ -1,0 +1,29 @@
+.News-text span {
+  color: var(--color-brand-dark);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.News-section {
+  padding-top: 96px;
+  padding-bottom: 48px;
+}
+
+.News-container {
+  display: flex;
+  gap: 40px;
+}
+
+.News-content {
+  max-width: 710px;
+}
+
+.News-text .zamanala {
+  color: var(--color-brand-dark);
+  text-transform: lowercase;
+  font-weight: 600;
+}
+
+.News-title {
+  margin-bottom: 42px;
+}

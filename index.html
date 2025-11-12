@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Прекрасна Поліна</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -133,7 +133,12 @@
             <ul class="photo-list">
               <li class="formats-item">
                 <article class="photo-card">
-                  <h3 class="format-title">Няшка-стесняшка</h3>
+                  <img
+                    class="photo-image"
+                    src="./images/sport-women.jpg"
+                    alt="На спорте"
+                  />
+                  <h3 class="format-title">На спорте</h3>
                   <div class="format-txt">
                     <p>На скромном, милом, очеровательном</p>
                     <p>Настроение приподнятое</p>
@@ -142,6 +147,11 @@
               </li>
               <li class="formats-item">
                 <article class="photo-card">
+                  <img
+                    class="photo-image"
+                    src="./images/mnogo-domicov.jpg"
+                    alt="Смотря какой фабрик"
+                  />
                   <h3 class="format-title">Смотря какой фабрик</h3>
                   <div class="format-txt">
                     <p>На скромном, милом, очеровательном</p>
@@ -151,6 +161,11 @@
               </li>
               <li class="formats-item">
                 <article class="photo-card">
+                  <img
+                    class="photo-image"
+                    src="./images/zagar.jpg"
+                    alt="Стерва"
+                  />
                   <h3 class="format-title">Стерва</h3>
                   <div class="format-txt">
                     <p>На скромном, милом, очеровательном</p>
@@ -173,7 +188,7 @@
             <div class="contact-form">
               <h2 class="Support-title section-title">Поддержать</h2>
               <p>Поддержи нереалку и будь ахуенным типом</p>
-              <form name="modal-form" autocomplete="off" novalidate>
+              <form name="modal-form" autocomplete="off">
                 <div class="form-field">
                   <label class="form-label visualy-hidden" for="user-name"
                     >Имя</label
@@ -184,6 +199,7 @@
                     id="user-name"
                     name="user-name"
                     placeholder="Имя"
+                    required
                   />
                 </div>
 
@@ -197,6 +213,7 @@
                     id="user-tel"
                     name="user-tel"
                     placeholder="Телефон"
+                    required
                   />
                 </div>
 
@@ -210,6 +227,7 @@
                     id="user-email"
                     name="user-email"
                     placeholder="Електронная почта"
+                    required
                   />
                 </div>
 
@@ -305,12 +323,12 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">close</button>
         <h2>Заказать фул</h2>
         <p>Оставь заявку и наш спец свяжется с тобой</p>
-        <form name="contact-form" autocomplete="off" novalidate>
+        <form name="contact-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visualy-hidden" for="user-name">Имя</label>
             <input
@@ -319,32 +337,37 @@
               id="user-name"
               name="user-name"
               placeholder="Имя"
+              minlength="4"
+              maxlength="15"
+              required
             />
           </div>
 
           <div class="form-field">
-            <label class="form-label visualy-hidden" for="user-tel"
-              >Телефон</label
-            >
+            <label class="form-label visualy-hidden" for="user-tel">
+              Телефон
+            </label>
             <input
               class="form-input"
               type="tel"
               id="user-tel"
               name="user-tel"
               placeholder="Телефон"
+              required
             />
           </div>
 
           <div class="form-field">
-            <label class="form-label visualy-hidden" for="user-email"
-              >Електронная почта</label
-            >
+            <label class="form-label visualy-hidden" for="user-email">
+              Електронная почта
+            </label>
             <input
               class="form-input"
               type="email"
               id="user-email"
               name="user-email"
               placeholder="Електронная почта"
+              required
             />
           </div>
 
