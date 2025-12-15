@@ -1,0 +1,21 @@
+.text-brand {
+  color: var(--color-brand);
+}
+
+.text-brand-dark {
+  color: var(--color-brand-dark);
+}
+
+.text-brand2 {
+  text-shadow: 2px 2px 4px var(--color-brand);
+}
+
+.text-bold-lower {
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+.text-bold-upper {
+  font-weight: 600;
+  text-transform: uppercase;
+}

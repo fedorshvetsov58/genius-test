@@ -1,0 +1,17 @@
+.News-section {
+  padding-top: 96px;
+  padding-bottom: 48px;
+
+  &__container {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__content {
+    max-width: 710px;
+  }
+
+  &__title {
+    margin-bottom: 42px;
+  }
+}

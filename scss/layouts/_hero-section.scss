@@ -10,20 +10,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 0;
-}
 
-.hero-title {
-  margin-bottom: 0;
-  color: var(--color-primary-light);
-  text-align: center;
-  font-size: 120px;
-  font-weight: 900;
+  &__title {
+    margin-bottom: 0;
+    color: var(--color-primary-light);
+    text-align: center;
+    font-size: 120px;
+    font-weight: 900;
+  }
 }
 
 .hero-title .sec-accent {
   text-shadow: 2px 2px 4px var(--color-brand);
-}
-
-.hero-title .accent {
-  color: #ff69b4;
 }

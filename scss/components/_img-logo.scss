@@ -1,0 +1,10 @@
+.img-logo {
+  width: 120px;
+  border-radius: 25px;
+  transition: transform 0.3s, border-radius 0.3s;
+}
+
+.img-logo:hover {
+  transform: scale(1.1);
+  border-radius: 35px;
+}
