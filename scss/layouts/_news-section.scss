@@ -1,9 +1,14 @@
 .News-section {
-  padding-top: 96px;
+  padding-top: 40px;
   padding-bottom: 48px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 96px;
+  }
 
   &__container {
     display: flex;
+    align-items: flex-start;
     gap: 40px;
   }
 
@@ -13,5 +18,19 @@
 
   &__title {
     margin-bottom: 42px;
+  }
+
+  &__photo {
+    max-width: 300px;
+    width: 100%;
+    width: 393;
+    opacity: 1;
+    border-top-left-radius: 400px;
+    border-top-right-radius: 400px;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
   }
 }

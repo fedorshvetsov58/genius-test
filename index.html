@@ -25,9 +25,19 @@
               <li><a class="link" href="#Support">Поддержать</a></li>
             </ul>
           </nav>
-          <button class="button modal-btn-open" type="button">
+          <button class="header__button button modal-btn-open" type="button">
             Заказать фул
           </button>
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -38,6 +48,12 @@
             <span class="text-brand">Прекрасная</span>
             <span class="text-brand2">Полина</span>
           </h1>
+          <button
+            class="hero-section__button button modal-btn-open"
+            type="button"
+          >
+            Заказать фул
+          </button>
         </div>
       </section>
       <section class="advantages-section">
@@ -70,11 +86,15 @@
                 он не понимал, почему я такая злюка.
               </p>
             </div>
-            <img src="./images/korich.jpg" alt="ФОТО ГДЕ ПРОСТО СОСОЧКА" />
+            <img
+              class="News-section__photo"
+              src="./images/korich.jpg"
+              alt="ФОТО ГДЕ ПРОСТО СОСОЧКА"
+            />
           </div>
         </div>
       </section>
-      <section class="gratest-girl-section section" id="Gratest-girl">
+      <!-- <section class="gratest-girl-section section" id="Gratest-girl">
         <div class="container">
           <h2
             class="gratest-girl-section__title section__title section--centered"
@@ -120,8 +140,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="photos-section section" id="Photos">
+      </section> -->
+      <!-- <section class="photos-section section" id="Photos">
         <div class="container">
           <h2 class="photos-section__title section__title section--centered">
             Топ фото
@@ -183,8 +203,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="support-section section" id="Support">
+      </section> -->
+      <!-- <section class="support-section section" id="Support">
         <div class="container">
           <div class="support-section__container">
             <div class="support-section__form">
@@ -255,9 +275,9 @@
             ></iframe>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-container">
           <nav class="footer-nav">
@@ -323,7 +343,7 @@
           </address>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <div class="backdrop is-hidden">
       <div class="modal">
@@ -391,5 +411,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
