@@ -3,8 +3,14 @@
 
   &__container {
     display: flex;
-    gap: 32px;
+    flex-direction: column;
+    gap: 24px;
     justify-content: space-around;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 32px;
+    }
   }
 
   &__title {
@@ -17,8 +23,22 @@
 
   &__map {
     flex-shrink: 0;
+    height: 176px;
+    margin: 0 -24px;
     border: none;
-    border-radius: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: auto;
+      width: 320px;
+      height: 500px;
+      border-radius: 20px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 600px;
+      height: 600px;
+      border-radius: 20px;
+    }
   }
 
   &__button {

@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Прекрасна Поліна</title>
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -94,7 +98,7 @@
           </div>
         </div>
       </section>
-      <!-- <section class="gratest-girl-section section" id="Gratest-girl">
+      <section class="gratest-girl-section section" id="Gratest-girl">
         <div class="container">
           <h2
             class="gratest-girl-section__title section__title section--centered"
@@ -140,71 +144,127 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="photos-section section" id="Photos">
+      </section>
+      <section class="photos-section section" id="Photos">
         <div class="container">
           <h2 class="photos-section__title section__title section--centered">
             Топ фото
           </h2>
-          <div class="photos-section__container">
-            <button class="carusel-button" type="button">
+          <div class="photos-section__slider">
+            <button
+              class="photos-section__button carusel-button prev"
+              type="button"
+            >
               <svg class="carusel-arrow" width="16" height="16">
                 <use href="./images/icons.svg#icon-Arrow"></use>
               </svg>
             </button>
-            <ul class="photos-section__list">
-              <li class="photos-section__item">
-                <article class="photo-card">
-                  <img
-                    class="photo-card__image"
-                    src="./images/sport-women.jpg"
-                    alt="На спорте"
-                  />
-                  <h3 class="photo-card__title">На спорте</h3>
-                  <div class="photo-card__txt">
-                    <p>На скромном, милом, очеровательном</p>
-                    <p>Настроение приподнятое</p>
-                  </div>
-                </article>
-              </li>
-              <li class="photos-section__item">
-                <article class="photo-card">
-                  <img
-                    class="photo-card__image"
-                    src="./images/mnogo-domicov.jpg"
-                    alt="Смотря какой фабрик"
-                  />
-                  <h3 class="photo-card__title">Смотря какой фабрик</h3>
-                  <div class="photo-card__txt">
-                    <p>На скромном, милом, очеровательном</p>
-                    <p>Настроение приподнятое</p>
-                  </div>
-                </article>
-              </li>
-              <li class="photos-section__item">
-                <article class="photo-card">
-                  <img
-                    class="photo-card__image"
-                    src="./images/zagar.jpg"
-                    alt="Стерва"
-                  />
-                  <h3 class="photo-card__title">Стерва</h3>
-                  <div class="photo-card__txt">
-                    <p>На скромном, милом, очеровательном</p>
-                    <p>Настроение приподнятое</p>
-                  </div>
-                </article>
-              </li>
-            </ul>
-            <button class="carusel-button next" type="button">
+            <div class="photos-section__container swiper-container">
+              <ul class="photos-section__list swiper-wrapper">
+                <li class="photos-section__item swiper-slide">
+                  <article class="photo-card">
+                    <img
+                      class="photo-card__image"
+                      src="./images/sport-women.jpg"
+                      alt="На спорте"
+                    />
+                    <h3 class="photo-card__title">На спорте</h3>
+                    <div class="photo-card__txt">
+                      <p>На скромном, милом, очеровательном</p>
+                      <p>Настроение приподнятое</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="photos-section__item swiper-slide">
+                  <article class="photo-card">
+                    <img
+                      class="photo-card__image"
+                      src="./images/mnogo-domicov.jpg"
+                      alt="Смотря какой фабрик"
+                    />
+                    <h3 class="photo-card__title">Смотря какой фабрик</h3>
+                    <div class="photo-card__txt">
+                      <p>На скромном, милом, очеровательном</p>
+                      <p>Настроение приподнятое</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="photos-section__item swiper-slide">
+                  <article class="photo-card">
+                    <img
+                      class="photo-card__image"
+                      src="./images/zagar.jpg"
+                      alt="Стерва"
+                    />
+                    <h3 class="photo-card__title">Стерва</h3>
+                    <div class="photo-card__txt">
+                      <p>На скромном, милом, очеровательном</p>
+                      <p>Настроение приподнятое</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="photos-section__item swiper-slide">
+                  <article class="photo-card">
+                    <img
+                      class="photo-card__image"
+                      src="./images/sport-women.jpg"
+                      alt="На спорте"
+                    />
+                    <h3 class="photo-card__title">На спорте</h3>
+                    <div class="photo-card__txt">
+                      <p>На скромном, милом, очеровательном</p>
+                      <p>Настроение приподнятое</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="photos-section__item swiper-slide">
+                  <article class="photo-card">
+                    <img
+                      class="photo-card__image"
+                      src="./images/mnogo-domicov.jpg"
+                      alt="Смотря какой фабрик"
+                    />
+                    <h3 class="photo-card__title">Смотря какой фабрик</h3>
+                    <div class="photo-card__txt">
+                      <p>На скромном, милом, очеровательном</p>
+                      <p>Настроение приподнятое</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="photos-section__item swiper-slide">
+                  <article class="photo-card">
+                    <img
+                      class="photo-card__image"
+                      src="./images/zagar.jpg"
+                      alt="Стерва"
+                    />
+                    <h3 class="photo-card__title">Стерва</h3>
+                    <div class="photo-card__txt">
+                      <p>На скромном, милом, очеровательном</p>
+                      <p>Настроение приподнятое</p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+              <div class="pagination">
+                <span class="pagination_button"></span>
+                <span class="pagination_button"></span>
+                <span class="pagination_button"></span>
+                <span class="pagination_button"></span>
+              </div>
+            </div>
+            <button
+              class="photos-section__button carusel-button next"
+              type="button"
+            >
               <svg class="carusel-arrow" width="16" height="16">
                 <use href="./images/icons.svg#icon-Arrow"></use>
               </svg>
             </button>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="support-section section" id="Support">
+      </section>
+      <section class="support-section section" id="Support">
         <div class="container">
           <div class="support-section__container">
             <div class="support-section__form">
@@ -267,21 +327,19 @@
             <iframe
               class="support-section__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126214.40561909287!2d115.14187213542067!3d-8.672504761232497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2409b0e5e80db%3A0xe27334e8ccb9374a!2z0JTQtdC90L_QsNGB0LDRgCwgRGVucGFzYXIgQ2l0eSwg0JHQsNC70LgsINCY0L3QtNC-0L3QtdC30LjRjw!5e0!3m2!1sru!2spl!4v1761265114931!5m2!1sru!2spl"
-              width="600"
-              height="600"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
-        <div class="footer-container">
-          <nav class="footer-nav">
-            <div class="footer-logo">
+        <div class="footer__container">
+          <nav class="footer__nav">
+            <div class="footer__logo">
               <a href="#">
                 <img
                   src="./images/logo.png"
@@ -290,60 +348,61 @@
                 />
               </a>
             </div>
-            <ul class="footer-menu">
+            <ul class="footer__menu">
               <li><a class="link" href="#News">Новости</a></li>
               <li><a class="link" href="#Gratest-girl">Лучшая девушка</a></li>
               <li><a class="link" href="#Photos">Фотки</a></li>
               <li><a class="link" href="#Support">Поддержать</a></li>
             </ul>
           </nav>
-          <address class="footer-address">
-            <ul class="address-list">
-              <li>
-                <a class="address-link" href="tel:+380977777777"
-                  >+38 (097) 777 77 77</a
-                >
-              </li>
-              <li>
-                <a class="address-link" href="mailto:polia@gmail.com"
-                  >polia@gmail.com</a
-                >
-              </li>
-              <li>
-                <a
-                  class="address-link"
-                  href="https://share.google/ZYvNInYwBnuFtZMNB"
-                  target="_blank"
-                  >Україна, м.Київ, вул. Королев-22 буд.06
-                </a>
-              </li>
-              <li>
+          <address class="footer__address">
+            <div class="footer__address-contacts">
+              <ul class="footer__address-list">
+                <li>
+                  <a class="footer__address-link" href="tel:+380977777777"
+                    >+38 (097) 777 77 77</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__address-link" href="mailto:polia@gmail.com"
+                    >polia@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__address-link"
+                    href="https://share.google/ZYvNInYwBnuFtZMNB"
+                    target="_blank"
+                    >Україна, м.Київ, вул. Королев-22 буд.06
+                  </a>
+                </li>
+              </ul>
+              <div>
                 <a href="#">
-                  <svg class="address-icon" width="32" height="32">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="address-icon" width="32" height="32">
+                  <svg class="footer__address-icon" width="32" height="32">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
-              </li>
-            </ul>
-            <div class="address-info">
-              <a lang="uk" class="address-link" target="_blank"
+                <a href="#">
+                  <svg class="footer__address-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer__address-info">
+              <a lang="uk" class="footer__address-link" target="_blank"
                 >Політика конфіденційності</a
               >
-              <p lang="uk" class="address-copyright">
+              <p lang="uk" class="footer__address-copyright">
                 &copy; 2025 Дані захищені
               </p>
             </div>
           </address>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden">
       <div class="modal">
@@ -412,5 +471,7 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/formats-slider.js"></script>
   </body>
 </html>
